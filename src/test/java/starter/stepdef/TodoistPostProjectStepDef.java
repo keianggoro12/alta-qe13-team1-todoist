@@ -53,8 +53,6 @@ public class TodoistPostProjectStepDef {
     @And("Response body return name was {string} and is favorite is {string}")
     public void responseBodyReturnNameWasAndIsFavoriteIs(String name, String isFavorite) {
         boolean expectedIsFavorite = Boolean.parseBoolean(isFavorite);
-
-        // Verifikasi respons body menggunakan nilai boolean yang diharapkan
         then()
                 .body(TodoistResponses.NAME, equalTo(name))
                 .body(TodoistResponses.IS_FAVORITE, equalTo(expectedIsFavorite));
