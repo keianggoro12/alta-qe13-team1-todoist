@@ -25,7 +25,6 @@ public class TodoistGetProjectStepDef {
     public void getAllProject() {todoistGetProjectAPI.setGetAllProject();
     }
 
-
     @When("Send request get all project")
     public void sendRequestGetProject() {
         SerenityRest.given()
