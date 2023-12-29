@@ -13,11 +13,10 @@ public class TodoistGetProjectAPI {
 
     @Step("Get all project")
     public void setGetAllProject(){
-        SerenityRest.given();
     }
     @Step("Get single project")
-    public void setGetSingleProject(int project_id){
-        SerenityRest.given()
+    public void setGetSingleProject(String project_id){
+        SerenityRest.given().headers("Authorization", "Bearer " + Constants.TOKEN_KEI)
                 .pathParam("project_id", project_id);
     }
 
