@@ -5,7 +5,7 @@ Feature: Get project
     Given Get all project
     When Send request get all project
     Then Status code should be 200
-    And Validate get project json schema "GetAllProjectSchema.json"
+    And Validate get project json schema "GetAllProjectsSchema.json"
 
   @Todoist
    #GSP002
@@ -16,7 +16,7 @@ Feature: Get project
     And Validate get project json schema "GetSingleProjectSchema.json"
     Examples:
       | project_id |  |
-      | 2325681395 |  |
+      | 2325748494 |  |
 
   @Todoist
     #GSP003

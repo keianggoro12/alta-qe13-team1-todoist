@@ -13,7 +13,7 @@ Feature: Post project
 
   @Todoist
   #CSP002
-  Scenario Outline:CCreate single project with registered name
+  Scenario Outline:Create single project with registered name
     Given Create single project with "<json>"
     When Send request post project
     Then Status code should be 200
