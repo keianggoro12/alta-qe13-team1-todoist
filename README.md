@@ -15,6 +15,11 @@ The automated tests leverage tools such as Rest Assured and Serenity BDD to perf
 ## Issues
 The issue that occurred is that we couldn't run all the tests. The features couldn't be found. We have tried to troubleshoot, but still couldn't resolve the issue.
 
+## TEAM MEMBER
+- **Juliardi Dwi Anggoro**
+
+- **Halimah Kurnia**
+
 ## Test Execution
 
 To execute the automated tests, follow these steps:
