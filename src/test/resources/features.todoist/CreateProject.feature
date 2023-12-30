@@ -1,6 +1,7 @@
 Feature: Post project
-  @Todoist
+
   #CSP001
+  @Todoist
   Scenario Outline:Create single project with name
     Given Create single project with "<json>"
     When Send request post project
@@ -11,8 +12,8 @@ Feature: Post project
       | name  | json        |
       | waduh | CSP001.json |
 
+ #CSP002
   @Todoist
-  #CSP002
   Scenario Outline:Create single project with registered name
     Given Create single project with "<json>"
     When Send request post project
@@ -23,8 +24,8 @@ Feature: Post project
       | name  | json        |
       | waduh | CSP001.json |
 
+   #CSP003
   @Todoist
-  #CSP003
   Scenario Outline:Create single project with name using special character
     Given Create single project with "<json>"
     When Send request post project
@@ -35,8 +36,8 @@ Feature: Post project
       | name  | json        |
       | !@#!@#!@ | CSP003.json |
 
+   #CSP004
   @Todoist
-  #CSP004
   Scenario Outline:Create single project with name using numeric
     Given Create single project with "<json>"
     When Send request post project
@@ -47,8 +48,8 @@ Feature: Post project
       | name  | json        |
       | 23156 | CSP004.json |
 
-  @Todoist
   #CSP005
+  @Todoist
   Scenario Outline:Create single project without name
     Given Create single project with "<json>"
     When Send request post project
@@ -58,8 +59,8 @@ Feature: Post project
       |  | json        |
       |  | CSP005.json |
 
-  @Todoist
   #CSP006
+  @Todoist
   Scenario Outline:Create single project with name and color name
     Given Create single project with "<json>"
     When Send request post project
@@ -70,8 +71,8 @@ Feature: Post project
       | name | json        | color     |
       | saru | CSP006.json | berry_red |
 
+  #CSP006
   @Todoist
-  #CSP007
   Scenario Outline:Create single project with name and color id
     Given Create single project with "<json>"
     When Send request post project
@@ -81,8 +82,8 @@ Feature: Post project
       | json        |
       | CSP007.json |
 
-  @Todoist
   #CSP008
+  @Todoist
   Scenario Outline:Create single project with name and color using hexadecimal
     Given Create single project with "<json>"
     When Send request post project
@@ -92,8 +93,8 @@ Feature: Post project
       | json        |
       | CSP008.json |
 
-  @Todoist
   #CSP009
+  @Todoist
   Scenario Outline:Create single project with name and invalid color name
     Given Create single project with "<json>"
     When Send request post project
@@ -103,8 +104,8 @@ Feature: Post project
       | json        |
       | CSP009.json |
 
-  @Todoist
   #CSP010
+  @Todoist
   Scenario Outline:Create single project with name and is favorite is boolean
     Given Create single project with "<json>"
     When Send request post project
@@ -115,8 +116,8 @@ Feature: Post project
       | name | json        |
       | tori | CSP010.json |
 
-  @Todoist
   #CSP011
+  @Todoist
   Scenario Outline:Create single project with name and is favorite is not boolean
     Given Create single project with "<json>"
     When Send request post project
@@ -125,8 +126,8 @@ Feature: Post project
       | json        |
       | CSP011.json |
 
-  @Todoist
   #CSP012
+  @Todoist
   Scenario Outline:Create single project with name and valid view style
     Given Create single project with "<json>"
     When Send request post project
@@ -137,8 +138,8 @@ Feature: Post project
       | name  | json        | view style |
       | iyahh | CSP012.json | list       |
 
+#CSP013
   @Todoist
-  #CSP013
   Scenario Outline:Create single project with name and valid view style
     Given Create single project with "<json>"
     When Send request post project
@@ -147,8 +148,8 @@ Feature: Post project
       | json        |
       | CSP013.json |
 
+#CSP014
   @Todoist
-  #CSP014
   Scenario Outline:Create single project with using all of parameters
     Given Create single project with "<json>"
     When Send request post project
@@ -159,8 +160,9 @@ Feature: Post project
       | name    | json        | view style | color    | is_favorite |
       | projss2 | CSP014.json | list       | charcoal | true        |
 
+
+#CSP015
   @Todoist
-  #CSP015
   Scenario Outline:Create single project with using all of parameters except name
     Given Create single project with "<json>"
     When Send request post project
